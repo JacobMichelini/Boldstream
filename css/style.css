@@ -6,6 +6,38 @@
  * Made By MaterializeCSS.com
  */
 
+ .col.grid-example {
+  position: relative;
+  border: 1px solid #eee;
+  margin: 0px 0px;
+  text-align: center;
+  line-height: 1.8rem;
+  font-size: 28px;
+  background-color: teal;
+  color: white;
+  padding: 0;
+}
+
+ .col.grid-example.black-text {
+  line-height: 50px;
+}
+
+@media only screen and (max-width: 359px) {
+  .col.grid-example {
+  font-size: 1.224rem;
+  } 
+}
+
+.set-height {
+  height: 100px;
+}
+
+.row .col.s2-4 {
+      width: 20%;
+      margin-left: 0; 
+}
+
+
 .header {
   text-shadow:0px 0px 10px #333;
 }
@@ -41,12 +73,18 @@ h7 {
 
 .no-bottom-pad {
   margin-bottom: 0px;
+  position: relative;
 }
+
+/*.row .unpadded {
+  padding: 0px 0px 0px 0px;
+}*/
 
 .backed {
   background-color: rgba(0,0,0,.5);
   text-shadow:0px 0px 20px #999;
   margin-bottom: 5vw;
+  border-radius: 5px;
 }
 
 
@@ -85,6 +123,39 @@ nav .brand-logo {
 
 footer.page-footer {
   margin: 0;
+}
+
+.teal-triangle {
+  position: absolute;
+  top: 0px;
+  right: -75px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 51px 0 0 75px;
+  border-color: transparent transparent transparent teal;
+}
+
+.orange-triangle {
+  position: absolute;
+  top: 0px;
+  right: -75px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 51px 0 0 75px;
+  border-color: transparent transparent transparent #ffc107;
+}
+
+.blue-triangle {
+  position: absolute;
+  top: 0px;
+  right: -75px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 51px 0 0 75px;
+  border-color: transparent transparent transparent #42A5F5;
 }
 
 .parallax-container {
@@ -150,6 +221,20 @@ w {
 
 b {
   font-weight: bold;
+}
+
+@media only screen and (max-width: 1200px) {
+  .teal-triangle {
+  display: none;
+  }
+
+.orange-triangle {
+  display: none;
+  }
+
+.blue-triangle {
+  display: none;
+  }
 }
 
 
